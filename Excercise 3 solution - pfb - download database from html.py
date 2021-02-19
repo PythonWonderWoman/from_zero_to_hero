@@ -9,9 +9,16 @@ how to start?
         base of users mentioned on the page
         - see page in view source mode to see if you can see list of users in html component
         - you will need 'get' module from 'reqests'
-        - now we need to convert www url to html
+        - now we need to convert url to html format
         - use bs4 from BeautifulSoup module
-        - and parse url
+        - and parse content
+        - next we only everything what is inside <h3> tags
+        - create loop in order to divide content in separate lines
+        - remove all unnecessary characters
+        - make sure you won't have to much spaces, prepare data to csv file
+        - extract only lines starting with digits to remove unnecessary content
+        - you're done
+        - in next excercise we will use this script to create csv file
         
 """
 from requests import get
